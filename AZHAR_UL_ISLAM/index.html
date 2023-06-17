@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Azhar-Ul-Islam</title>
+    <link rel="icon" href="./images/ffdf.JPG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- علامہ ازھار علی مدنی  -->
+
+<body>
+    <!-- Nav Bar Section -->
+    <nav class="sticky-top p-3 navbar navbar-expand-lg bg-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href=""><img class="rounded-pill" width="100%" height="30px"
+                    src="./images/ffdf.JPG" alt=""></a>
+            <button class=" navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=" navbar-toggler-icon"><i class="text-white fs-3 fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white " aria-current="page" href="index.html"><span
+                                class="hovernav">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" text-white nav-link" href="addmission.html"><span
+                                class="hovernav">Admission</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#headerfounder"><span class="hovernav">Our
+                                Founder</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./social.html"><span class="hovernav">Social
+                                Media</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#headercontact"><span class="hovernav">Contact
+                                Us</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 1st picture Section -->
+    <div class="container back">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h1 class="display-5 fw-bold font">Welcome to <h2 class="font">
+                        <span class="color fw-bold">Azhar-ul-Islam </span>Academy
+                    </h2>
+                </h1>
+                <p class="fs-5 mt-4 font">Welcome to our esteemed platform dedicated to Islamic education and enlightenment.
+                    Here,
+                    we invite you to embark on a transformative journey of discovery, where the treasures of Islamic
+                    knowledge await you.
+                    Our website is a gateway to the profound wisdom found in the Qur'an and Sunnah,
+                    offering you an opportunity to unlock the timeless teachings and guidance of Islam</p>
+            </div>
+            <div class="col-md-6  mt-5">
+                <img class="img1" width="100%" class="rounded shadow" src="./images/pexels-tayeb-mezahdia-318451.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Our Mission Section -->
+    <section>
+        <div class="reveal">
+            <div id="headermission">
+            </div>
+            <div class="container-fluid">
+                <div class="owner mt-5">
+                    <h1 class="text-center">Our Mission at Azhar-ul-Islam</h1>
+                </div>
+                <div class="text-center text-secondary mt-4 fs-5 ">
+                    <p>Our website is an educational platform dedicated to providing comprehensive knowledge and
+                        guidance in
+                        various
+                        aspects of Islamic studies. We aim to empower individuals with a deeper understanding of the
+                        Quran,
+                        Tajweed
+                        (correct recitation of the Quran), Quran translation, and Quranic exegesis (Tafseer). Our team
+                        comprises
+                        professional scholars, knowledgeable in matters of faith, including esteemed Muftis and learned
+                        individuals
+                        who will accompany you on this enlightening journey. Furthermore, we offer short courses
+                        designed to
+                        facilitate easy learning of Arabic grammar, such as "Ilm Us Surf" (knowledge of morphology),
+                        "Ilm Us
+                        Nahv"
+                        (knowledge of syntax), "Ilm E Balaghat" (rhetoric), "Ilm Ul Muntiq" (logic), "Fiqh E Masail"
+                        (jurisprudence), "Aqaid" (beliefs), and much more. These courses cater to students at various
+                        levels,
+                        ensuring a comprehensive understanding of the subjects. For those pursuing a more rigorous
+                        curriculum,
+                        we
+                        also provide an Alim course and diploma program based on the renowned Dars-e-Nizami syllabus. By
+                        studying
+                        these courses, you will not only gain proficiency in Arabic grammar but also develop a profound
+                        comprehension of the Quran, allowing you to comprehend its translation with clarity and depth.
+                        We invite
+                        you
+                        to embark on this transformative journey of knowledge and spirituality with us.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+    <!-- Module Section -->
+    <section>
+        <div class=" reveal">
+            <div id="headerfounder">
+            </div>
+            <!-- Module Section -->
+            <div class="container">
+                <div class="owner">
+                    <h1>Our Founder</h1>
+                </div>
+                <section class="about">
+                    <div class="about-image d-flex justify-content-center align-items-center">
+                        <img class="img2" src="./images/teacher.JPG">
+                    </div>
+                    <div class="about-content">
+                        <h2>Founder of Azhar-ul-Islam Academy</h2>
+                        <p>Our website is an educational platform dedicated to providing comprehensive knowledge and
+                            guidance in
+                            various
+                            aspects of Islamic studies
+                            Our website is an educational platform dedicated to providing comprehensive knowledge and
+                            guidance
+                            in various
+                            aspects of Islamic studies. We aim to empower individuals with a deeper understanding of the
+                            Quran,
+                            Tajweed
+                            (correct recitation of the Quran), Quran translation, and Quranic exegesis (Tafseer). .
+                            . We aim to empower individuals with a deeper understanding of the Quran, Tajweed (correct
+                            recitation of the
+                            Quran), Quran translation, and Quranic exegesis (Tafseer). .</p>
+                        <div class="row mt-5">
+                            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                <a class="btn btn-outline-warning rounded-pill" target="_blank"
+                                    href="./pdf/ازھار الاسلام اکیڈمی.pdf" download>Read more</a> </a>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </section>
+    </div>
+    </section>
+    <div class="container">
+        <div class="row mt-5 mb-3">
+            <div class="col-md-12 owner">
+                <h1>OUR SOCIAL MEDIA UPDATES</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 borderr p-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6XPc_UnpmzU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/QUFja38rx_8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/WPrz8KP8VlM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/RTPb3f2MlTI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/QJURwRHwbIY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/rIeVsUY_9mY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/1Ob6ND-VuEI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/SFUsx1Ib5eo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 borderr p-4 mt-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ArBPTe_jlVs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h5 class="text-center">FOR MORE VISIT OUR YOUTUBE CHANNEL</h5>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                <a class="text-decoration-none " target="_blank"
+                    href="https://www.youtube.com/@darsenizami-help-desk"><i
+                        class="me-2 fa-brands fa-youtube text-danger fs-5"></i>Allama Azhar Ali Madani </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center mt-4">
+                <a class="btn btn-warning rounded-pill" href="./social.html">Read more</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="headercontact">
+        <div class="owner">
+            <h1 class="">Contact Us</h1>
+        </div>
+    </div>
+    <footer class="footer-section bg-white ">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-youtube"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#f5cb22"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <p> <span class="mail"><a href="https://youtube.com/@darsenizami-help-desk"
+                                            target="_blank">Allama Azhar Ali Madani</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="bi bi-whatsapp"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f5cb22"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                            </svg>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <p>
+                                    <span class="mail"> <a
+                                            href="https://wa.me/923154411997?text=WelcomeToAzharulislamAcademy"
+                                            target="_blank">+923154411997</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span class="mail"><a href="mailto:izhar2526@gmail.com">izhar2526@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="./images/ffdf.JPG" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Explore the beauty of Islam through our educational platform.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://www.facebook.com/allamaazharalimadani?mibextid=ZbWKwL"
+                                    target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+
+
+                                <a href="https://wa.me/923154411997?text=WelcomeToAzharulislamAcademy" target="_blank">
+                                    <i class="bi bi-whatsapp whatsapp"></i><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="40" height="40" fill="#25D366" class="bi bi-whatsapp"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                    </svg></a>
+
+                                <a href="https://youtube.com/@darsenizami-help-desk" target="_blank">
+                                    <i class="bi bi-youtube"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FF0000"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html" rel="">Home</a></li>
+                                <li><a href="./addmission.html">Addmission</a></li>
+                                <li><a href="./addmission.html">Courses</a></li>
+                                <li><a href="./addmission.html">Modules</a></li>
+                                <li><a href="#headerfounder">Our Founder</a></li>
+                                <li><a href="#headercontact"> Contact</a></li>
+                                <li><a href="#headermission">Our Mission</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+
+                            <div class="footer-widget-heading">
+                                <h3>Join Us</h3>
+                            </div>
+                            <div class="single-cta">
+                                <i class="bi bi-whatsapp"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f5cb22"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                </svg>
+                                <div class="cta-text">
+                                    <h4>Whatsapp Community</h4>
+                                    <h4> <span class="mail"><a href="https://chat.whatsapp.com/Fa4fzYjbqMdA9re1dLUe48"
+                                                target="_blank">Whatsapp Group</a>
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="single-cta">
+                                <i class="bi bi-facebook"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#f5cb22"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                                <div class="cta-text">
+                                    <h4>Facebook Community</h4>
+                                    <h4> <span class="mail"><a
+                                                href="https://m.facebook.com/groups/1505739429624809/?paipv=0&eav=AfYJCuxOf1yY6QTr-gCwIhs9cg3NhkJc-53QxDB93ERtWZnVE-PQp0ngTg3TceSWvV0"
+                                                target="_blank">Facebook Group</a>
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023, All Right Reserved <a
+                                    href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="addmission.html">Addmission</a></li>
+                                <li><a href="#headerfounder">Our Founder</a></li>
+                                <li><a href="#headercontact">Contact</a></li>
+                                <li><a href="#headermission">Our Mission</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
